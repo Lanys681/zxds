@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.zxds.dr.pojo.DriverMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.zxds.dr.db.pojo.DriverEntity">
+            <id property="id" column="id" />
+            <result property="openId" column="open_id" />
+            <result property="nickname" column="nickname" />
+            <result property="name" column="name" />
+            <result property="sex" column="sex" />
+            <result property="photo" column="photo" />
+            <result property="pid" column="pid" />
+            <result property="birthday" column="birthday" />
+            <result property="tel" column="tel" />
+            <result property="email" column="email" />
+            <result property="mailAddress" column="mail_address" />
+            <result property="contactName" column="contact_name" />
+            <result property="contactTel" column="contact_tel" />
+            <result property="realAuth" column="real_auth" />
+            <result property="idcardAddress" column="idcard_address" />
+            <result property="idcardExpiration" column="idcard_expiration" />
+            <result property="idcardFront" column="idcard_front" />
+            <result property="idcardBack" column="idcard_back" />
+            <result property="idcardHolding" column="idcard_holding" />
+            <result property="drcardType" column="drcard_type" />
+            <result property="drcardExpiration" column="drcard_expiration" />
+            <result property="drcardIssueDate" column="drcard_issue_date" />
+            <result property="drcardFront" column="drcard_front" />
+            <result property="drcardBack" column="drcard_back" />
+            <result property="drcardHolding" column="drcard_holding" />
+            <result property="home" column="home" />
+            <result property="summary" column="summary" />
+            <result property="archive" column="archive" />
+            <result property="status" column="status" />
+            <result property="createTime" column="create_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,open_id,nickname,name,sex,photo,
+        pid,birthday,tel,email,mail_address,
+        contact_name,contact_tel,real_auth,idcard_address,idcard_expiration,
+        idcard_front,idcard_back,idcard_holding,drcard_type,drcard_expiration,
+        drcard_issue_date,drcard_front,drcard_back,drcard_holding,home,
+        summary,archive,status,create_time
+    </sql>
+</mapper>
