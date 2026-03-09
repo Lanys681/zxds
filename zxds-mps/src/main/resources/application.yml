@@ -15,7 +15,7 @@ spring:
 
   redis:
     database: 7
-    host: localhost
+    host: 192.168.213.137
     port: 6379
     password: abc123456
     jedis:
@@ -27,13 +27,13 @@ spring:
   cloud:
     inetutils:
       #子系统注册到Nacos上的IP地址
-      preferred-networks: 127.0.0.1
+      preferred-networks: 192.168.213.137
     nacos:
       #配置子系统在Web管理页面上的注册信息
       config:
         group: DEFAULT_GROUP
         file-extension: yaml
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.213.137:8848
         prefix: ${spring.application.name}
         namespace: zxds
       #配置子系统在Nacos上的注册信息
@@ -41,7 +41,7 @@ spring:
         namespace: zxds
         username: nacos
         password: nacos
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.213.137:8848
         heart-beat-interval: 1000
         heart-beat-timeout: 1000
         group: DEFAULT_GROUP
