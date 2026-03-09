@@ -13,7 +13,6 @@ public class MessageRefEntity implements Serializable {
     @Id
     private String _id;
 
-    // 防止因MQ重复投递或并发消费导致同一条消息被多次处理，确保消息消费的幂等性。
     @Indexed(unique = true)
     private String messageId;
 

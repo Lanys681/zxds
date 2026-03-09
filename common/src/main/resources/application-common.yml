@@ -12,7 +12,7 @@ tencent:
     bucket-private: 私有存储桶名称
 
 wx:
-  app-id: 	wx4c82993ff540bc6e
+  app-id: wx4c82993ff540bc6e
   app-secret: 666cc866e3ef86b6ebde27ab9399a6b2
   mch-id: 1234567890
   key: 11111111111111111111111111111111
