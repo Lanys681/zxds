@@ -13,22 +13,7 @@ spring:
   cloud:
     inetutils:
       preferred-networks: 192.168.213.137
-    nacos:
-      #配置中心
-      config:
-        group: DEFAULT_GROUP
-        file-extension: yaml
-        server-addr: 192.168.213.137:8848
-        prefix: ${spring.application.name}
-        namespace: zxds
-      discovery:
-        namespace: zxds
-        username: nacos
-        password: nacos
-        server-addr: 192.168.213.137:8848
-        heart-beat-interval: 1000
-        heart-beat-timeout: 1000
-        group: DEFAULT_GROUP
+
     sentinel:
       transport:
         dashboard: 192.168.213.137:8718
